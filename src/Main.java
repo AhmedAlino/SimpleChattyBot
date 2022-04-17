@@ -10,6 +10,11 @@ public class Main {
         guessUserAge();
         botCount();
         knowledgeTest();
+
+        /*
+        *I am planning to add some test in this project.
+        * Then, i will merge it in my master branch.
+         */
     }
     static void botGreeting(String name, String date) {
         System.out.println(String.format("Hello! My name is %s.", name));
