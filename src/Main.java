@@ -20,12 +20,14 @@ public class Main {
         System.out.println(String.format("Hello! My name is %s.", name));
         System.out.println(String.format("I was created in %s.", date));
     }
+
     static void introToBoot() {
         System.out.print("Please remind me your name: \n>");
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         String name = scanner.nextLine();
         System.out.println(String.format("What a great name you have %s .", name));
     }
+
     static void guessUserAge(){
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         int[] remainders = new int[3];
@@ -39,6 +41,7 @@ public class Main {
         int age = (remainders[0] * 70 + remainders[1] * 21 +remainders[2] * 15) % 105;
         System.out.println(String.format("Your age is %d; that's a good time to start programming", age));
     }
+
     static void botCount() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         long delimiter = 0;
@@ -48,6 +51,7 @@ public class Main {
         for (int i = 0; i <= delimiter; i++)
             System.out.println(i);
     }
+
     static void knowledgeTest() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         System.out.println("Let's test your knowledge on java.\nWhat is the first name of java?");
