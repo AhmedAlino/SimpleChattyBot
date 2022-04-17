@@ -16,16 +16,30 @@ public class Main {
         * Then, i will merge it in my master branch.
          */
     }
+
+    /**
+     * This method great the user
+     * @param name
+     * @param date
+     */
     static void botGreeting(String name, String date) {
         System.out.println(String.format("Hello! My name is %s.", name));
         System.out.println(String.format("I was created in %s.", date));
     }
+
+    /**
+     * Introducing the user to the bot
+     */
     static void introToBoot() {
         System.out.print("Please remind me your name: \n>");
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         String name = scanner.nextLine();
         System.out.println(String.format("What a great name you have %s .", name));
     }
+
+    /**
+     * This method guest the user's age
+     */
     static void guessUserAge(){
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         int[] remainders = new int[3];
@@ -39,6 +53,10 @@ public class Main {
         int age = (remainders[0] * 70 + remainders[1] * 21 +remainders[2] * 15) % 105;
         System.out.println(String.format("Your age is %d; that's a good time to start programming", age));
     }
+
+    /**
+     * this method count till a number provided by the user
+     */
     static void botCount() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         long delimiter = 0;
@@ -48,6 +66,10 @@ public class Main {
         for (int i = 0; i <= delimiter; i++)
             System.out.println(i);
     }
+
+    /**
+     * Testing the knowledge of the user
+     */
     static void knowledgeTest() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         System.out.println("Let's test your knowledge on java.\nWhat is the first name of java?");
